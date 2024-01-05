@@ -91,11 +91,10 @@ INSERT INTO `permission` (`permission_name`) VALUES ('READ_PERMISSION');
 	-- USERS
 INSERT INTO 
 `user`
- (`first_name`, `last_name`, `user_name`, `email`, `password`)
+ (`first_name`, `last_name`, `user_name`, `email`, `password`, `enabled`)
  VALUES
  ('Super', 'Admin', 'SuperAdmin',
   'super.admin@rspl.com',
-   '$2a$10$I3ULpTOEBBrHdovp3e1ElOv/NfgTP7zB/x4UEf7gqdhEHym1mFmAC');   --password = SuperAdmin
 
 	-- USER_ROLES
     INSERT INTO `user_roles` (`user_id`, `role_id`) VALUES ('1', '1');
