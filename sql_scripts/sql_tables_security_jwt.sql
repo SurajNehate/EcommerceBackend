@@ -95,6 +95,7 @@ INSERT INTO
  VALUES
  ('Super', 'Admin', 'SuperAdmin',
   'super.admin@rspl.com',
+   '$2a$10$I3ULpTOEBBrHdovp3e1ElOv/NfgTP7zB/x4UEf7gqdhEHym1mFmAC', 1);   -- password = SuperAdmin
 
 	-- USER_ROLES
     INSERT INTO `user_roles` (`user_id`, `role_id`) VALUES ('1', '1');
