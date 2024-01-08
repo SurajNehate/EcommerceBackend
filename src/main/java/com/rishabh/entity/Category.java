@@ -3,6 +3,8 @@ package com.rishabh.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -20,8 +22,7 @@ public class Category {
     @Column(name = "category_name", nullable = false)
     private String categoryName;
 
-//    @JsonIgnore
-//    @OneToMany(mappedBy = "category")
-//    private List<Product> products;
-
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, fetch = FetchType.LAZY,
+            orphanRemoval = true)
+    private List<Product> products;
 }
